@@ -16,7 +16,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/bank")
 public class BankController {
     private Logger logger = LoggerFactory.getLogger(getClass());
-
+    
+    /** 
+    * @Description: 远程提供发货处理接口
+    * @Param: [orderid]
+    * @return: java.lang.String
+    * @Author: GaraYing
+    * @Date: 2018/8/15 14:05
+    */
     @RequestMapping(value = "/handleOrder")
     public String handleOrder(@RequestParam(required = false) String orderid){
 
